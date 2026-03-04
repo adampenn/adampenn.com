@@ -8,15 +8,15 @@ import { ventures } from '../data/ventures';
 
     <!-- Hero -->
     <section class="hero">
-      <h1>Adam Penn</h1>
-      <p class="tagline">
+      <h1 class="animate-in delay-1">Adam Penn</h1>
+      <p class="tagline animate-in delay-2">
         Engineer turned founder. I build and invest in real assets —
         with a bias toward long-term thinking, hands-on operations, and financial freedom.
       </p>
     </section>
 
     <!-- Ventures cards -->
-    <section class="section">
+    <section class="section animate-in delay-3">
       <div class="card-grid">
         {ventures.map(v => (
           <a href={v.url} target="_blank" rel="noopener" class="card" style="text-decoration: none;">
@@ -30,9 +30,9 @@ import { ventures } from '../data/ventures';
     </section>
 
     <!-- What I'm Building -->
-    <section class="section">
-      <p class="section-title">What I'm Building</p>
-      <div style="max-width: 600px; display: flex; flex-direction: column; gap: 1rem;">
+    <section class="section animate-in delay-4">
+      <span class="section-label">What I'm Building</span>
+      <div style="max-width: 560px; display: flex; flex-direction: column; gap: 1.25rem;">
         <p>
           I spent the first chapter of my career writing software. It taught me how to think in systems,
           debug problems under pressure, and build things that actually work. Eventually I realized I
@@ -52,8 +52,8 @@ import { ventures } from '../data/ventures';
     </section>
 
     <!-- Principles -->
-    <section class="section">
-      <p class="section-title">Principles</p>
+    <section class="section animate-in delay-5">
+      <span class="section-label">Principles</span>
       <ul class="principles-list">
         <li>Think in decades, not quarters. The best returns come from patience and compounding.</li>
         <li>Own the operations. If you don't understand how the machine works, you don't really own it.</li>
@@ -66,8 +66,8 @@ import { ventures } from '../data/ventures';
     </section>
 
     <!-- Now -->
-    <section class="section">
-      <p class="section-title">Now</p>
+    <section class="section animate-in delay-6">
+      <span class="section-label">Now</span>
       <div class="now-block">
         <p>
           Right now I'm focused on growing the Bidwell Capital Fund, improving operational systems
@@ -75,7 +75,7 @@ import { ventures } from '../data/ventures';
           Podcast. I'm also spending more time thinking about how to structure businesses around
           the life you actually want — not the other way around.
         </p>
-        <p style="font-size: 0.85rem; color: var(--color-text-light); margin-top: 0.5rem;">
+        <p style="font-size: 0.8rem; color: var(--text-tertiary); margin-top: 0.75rem;">
           Last updated: Q1 2026
         </p>
       </div>
