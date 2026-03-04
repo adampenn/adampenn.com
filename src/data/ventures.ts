@@ -8,7 +8,7 @@ export interface Venture {
 export const ventures: Venture[] = [
   {
     name: 'Bidwell Capital Fund',
-    oneLiner: 'Helping investors build wealth through real assets — short-term rental funds, oil syndications, and tax-advantaged strategies.',
+    oneLiner: 'Helping investors build wealth through real assets: short-term rental funds, oil syndications, and tax-advantaged strategies.',
     category: 'Investing',
     url: 'https://bidwellcapitalfund.com',
   },
@@ -20,7 +20,7 @@ export const ventures: Venture[] = [
   },
   {
     name: 'Wealth Independence Podcast',
-    oneLiner: 'Conversations on passive income, alternative investments, and building financial freedom — especially for tech professionals.',
+    oneLiner: 'Conversations on passive income, alternative investments, and building financial freedom, especially for tech professionals.',
     category: 'Media',
     url: 'http://wealthindependencepod.com/',
   },
