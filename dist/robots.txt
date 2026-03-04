@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://adampenn.com/sitemap-index.xml
