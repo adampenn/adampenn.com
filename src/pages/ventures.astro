@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro';
+import { ventures } from '../data/ventures';
+---
+
+<Base title="Ventures — Adam Penn" description="What I'm building: an investment fund, a property management company, and a podcast on wealth and freedom.">
+  <div class="container">
+
+    <div class="page-header">
+      <h1>Ventures</h1>
+      <p>Three businesses, one operating philosophy: own real assets, run tight operations, and compound over time.</p>
+    </div>
+
+    <section class="section">
+      <div class="card-grid">
+        {ventures.map(v => (
+          <a href={v.url} target="_blank" rel="noopener" class="card" style="text-decoration: none;">
+            <span class="card-label">{v.category}</span>
+            <span class="card-title">{v.name}</span>
+            <span class="card-desc">{v.oneLiner}</span>
+            <span class="card-link">Visit site</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+  </div>
+</Base>

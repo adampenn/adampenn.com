@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+import { updates } from '../../data/updates';
+---
+
+<Base title="Updates — Adam Penn" description="Quarterly founder reflections on building, investing, and living with intention.">
+  <div class="container">
+
+    <div class="page-header">
+      <h1>Updates</h1>
+      <p>Quarterly reflections on what I'm building, learning, and thinking about.</p>
+    </div>
+
+    <section class="section">
+      <div class="updates-list">
+        {updates.map(u => (
+          <a href={`/updates/${u.slug}`} class="update-item">
+            <span class="update-date">{u.date}</span>
+            <h2 class="update-title">{u.title}</h2>
+            <p class="update-excerpt">{u.excerpt}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+
+  </div>
+</Base>

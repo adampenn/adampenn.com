@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: adampenn-com
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+    # Optional: uncomment to enable Plausible analytics
+    # - key: PUBLIC_PLAUSIBLE_DOMAIN
+    #   value: adampenn.com
