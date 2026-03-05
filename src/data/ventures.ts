@@ -8,19 +8,19 @@ export interface Venture {
 export const ventures: Venture[] = [
   {
     name: 'Bidwell Capital Fund',
-    oneLiner: 'Helping investors build wealth through real assets: short-term rental funds, oil syndications, and tax-advantaged strategies.',
+    oneLiner: 'Building Generational Wealth through Real Assets',
     category: 'Investing',
     url: 'https://bidwellcapitalfund.com',
   },
   {
     name: 'Penn Properties',
-    oneLiner: 'Vacation rental management in Northern California. Hands-on operations, great guest experiences, consistent returns.',
+    oneLiner: 'Vacation rental management. Hands-on operations, built by an owner for owners, great guest experiences, consistent returns.',
     category: 'Operations',
     url: 'https://pennproperties.us',
   },
   {
     name: 'Wealth Independence Podcast',
-    oneLiner: 'Conversations on passive income, alternative investments, and building financial freedom, especially for tech professionals.',
+    oneLiner: 'Conversations on passive income, alternative investments, and building financial freedom.',
     category: 'Media',
     url: 'http://wealthindependencepod.com/',
   },

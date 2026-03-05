@@ -407,8 +407,8 @@ img { max-width: 100%; display: block; }
 }
 
 .bio-photo {
-  width: 200px;
-  height: 260px;
+  width: 300px;
+  height: 380px;
   object-fit: cover;
   flex-shrink: 0;
   filter: grayscale(0.25);
@@ -650,7 +650,7 @@ img { max-width: 100%; display: block; }
   .page-header { padding: 3.5rem 0 1.5rem; }
   .card-grid { grid-template-columns: 1fr; }
   .bio-section { flex-direction: column; gap: 2rem; }
-  .bio-photo { width: 160px; height: 200px; }
+  .bio-photo { width: 220px; height: 280px; }
   .footer-inner { flex-direction: column; }
   .footer-links { flex-wrap: wrap; gap: 1.5rem; }
   .nav-links { display: none; }
