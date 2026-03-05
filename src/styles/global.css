@@ -247,6 +247,32 @@ img { max-width: 100%; display: block; }
   font-weight: 300;
 }
 
+.hero-with-photo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-photo {
+  width: 260px;
+  height: 330px;
+  object-fit: cover;
+  flex-shrink: 0;
+  filter: grayscale(0.25);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: filter var(--transition);
+}
+
+.hero-photo:hover {
+  filter: grayscale(0);
+}
+
 .hero::after {
   content: '';
   position: absolute;
@@ -646,6 +672,8 @@ img { max-width: 100%; display: block; }
    ======================== */
 @media (max-width: 768px) {
   .hero { padding: 5rem 0 4rem; }
+  .hero-with-photo { flex-direction: column; text-align: left; }
+  .hero-photo { width: 200px; height: 260px; }
   .section { padding: 3.5rem 0; }
   .page-header { padding: 3.5rem 0 1.5rem; }
   .card-grid { grid-template-columns: 1fr; }
